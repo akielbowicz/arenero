@@ -17,6 +17,8 @@
           pkgs.dune_3
           pkgs.opam
 	  pkgs.ocamlPackages.utop
+	  pkgs.ocamlPackages.lsp
+	  pkgs.ocamlPackages.merlin
 	  pkgs.fish
 	  pkgs.emacs29
         ];
