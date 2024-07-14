@@ -1,0 +1,1713 @@
+{
+    "While Loop (4.2)": [
+        {
+            "title": "PiecewiseInference.jl: inverse modelling for complex dynamics",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Newcomers experiences: Why do we need a stricter Julia mode🧐",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Julia-Powered Computerized Cognitive Rehabilitation for Children",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "MacroModelling.jl - developing and solving DSGE models",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Developing a Satellite Telemetry Analysis System",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "The SatelliteToolbox.jl Ecosystem",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "A Reference Model for Airborne Wind Energy Systems - Case Study",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Towards Aerodynamic Simulations in Julia with Trixi.jl",
+            "start": "2024-07-10T15:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Variational Multiscale Method in Julia for airfoils simulations",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Trajectory optimisation in space mechanics with Julia",
+            "start": "2024-07-10T16:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Propagating large orbital uncertainty with TaylorIntegration.jl",
+            "start": "2024-07-10T16:40:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "RunwayPNPSolve.jl: Uncertainty-Aware Pose Estimation.",
+            "start": "2024-07-10T17:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Optimal Cooperative Rendezvous using AerialVehicles.jl",
+            "start": "2024-07-10T17:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Seamless Reproducibility of Complex Simulation Workflows",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "🎈 Featured Pluto notebooks: submit your own!",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Learning Biological Modulation Mechanisms with SciML",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "MATLAB |> Julia 😊",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Blending the gap: mixing MATLAB with Julia",
+            "start": "2024-07-11T10:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Bias correcting methods for climate models",
+            "start": "2024-07-11T11:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Retro6502 for 8-bit dev: smashing a mosquito with a pile driver",
+            "start": "2024-07-11T11:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Effective Julia Computation as a Service",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "PPTX.jl an open-source package by ASML",
+            "start": "2024-07-11T14:25:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Workflow for developing multiple interdependent packages",
+            "start": "2024-07-11T14:35:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "🚗 Integrating Julia for Perception task in autonomous driving",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Unveiling Full Stack Development with PeaceFounder",
+            "start": "2024-07-11T15:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Julia at Fugro",
+            "start": "2024-07-11T15:45:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "How a Julia Backend Accelerates Model Based App Development",
+            "start": "2024-07-11T16:05:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "TulipaEnergyModel.jl: An efficient and flexible energy model",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Industrial Julia Panel Discussion",
+            "start": "2024-07-11T16:40:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "GeometryOps.jl: Building a Comprehensive Native Geometry Package",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "EverySingleStreet.jl: Explore your city using Julia",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Best practices for package development using BestieTemplate.jl",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Modeling and simulation of sampled-data systems",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Profile Likelihood-based Practical Identifiability in Julia",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Steel thin-walled structural analysis and design with Julia",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Modelling population dynamics with Julia",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Earth and climate science in Julia: Power to the user",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Hydrological modelling in Julia with Wflow.jl and Ribasim.jl",
+            "start": "2024-07-12T14:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "multiobjective stochastic storage design of rainwater harvesting",
+            "start": "2024-07-12T14:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "High Resolution Flux Estimation with TurbulenceFlux.jl",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "SpeedyWeather.jl: Reinventing atmospheric models",
+            "start": "2024-07-12T14:40:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Oceananigans: an ocean-flavoured fluid dynamics library",
+            "start": "2024-07-12T14:50:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Subzero.jl: Fast and Flexible Sea Ice Physics",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Subglacial water flow simulations on GPUs",
+            "start": "2024-07-12T15:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "ODINN.jl: Multi-language Geoscientific Machine Learning",
+            "start": "2024-07-12T15:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Strategies to Integrate Data and Biogeochemical models",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "SpeciesDistributionModels.jl: an SDM workflow",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "How Climate Economics Domain Experts Use an Embedded DSL",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Visualization and analysis of 3D Lightning Mapping Array data",
+            "start": "2024-07-12T16:10:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Supporting development and operation of Scatterometers",
+            "start": "2024-07-12T16:20:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Julia Community Reshapes Computation in Geosciences",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "While Loop (4.2)"
+        },
+        {
+            "title": "Discussion: Earth and climate science in Julia",
+            "start": "2024-07-12T16:40:00+02:00",
+            "room": "While Loop (4.2)"
+        }
+    ],
+    "Function (4.1)": [
+        {
+            "title": "Differentiable point cloud rasterisation",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Julia for Particle-Based Multiphysics with TrixiParticles.jl",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "CedarEDA tutorial: a fresh approach to circuit simulation",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "JuliaSimBatteries.jl: Robust PDE Models of Lithium-ion Batteries",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Introducing DMRjulia v1.0",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Scientific Data Minisymposium",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "DiskArrays.jl for working with large disk-based nd-arrays",
+            "start": "2024-07-10T14:35:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "PyramidScheme.jl overviews for larger than memory arrays",
+            "start": "2024-07-10T15:05:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "DimensionalData.jl: named dimensions for julia data",
+            "start": "2024-07-10T15:15:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Rasters.jl: raster data and GIS tools for julia",
+            "start": "2024-07-10T15:40:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Efficient Chunk Access across HDF5, Zarr, and TIFF",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "KSVD.jl: A case study in performance optimization.",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Julia's use in nuclear physics data analysis: study of a case",
+            "start": "2024-07-10T16:50:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "UnROOT.jl - Data I/O for High-Energy Physics in Julia",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Circuit Model Discovery for Porous Silicon-Based Supercapacitors",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "A Computational Environment for Simulations in Systems Biology",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "PlantModules.jl: a package for modular plant growth modeling",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "CoupledElectricMagneticDipoles.jl",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Introducing MuJoCo.jl - Julia bindings for the MuJoCo simulator",
+            "start": "2024-07-11T10:10:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "What's new with VoronoiFVM.jl",
+            "start": "2024-07-11T10:20:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Nurturing a quantum open-source ecosystem",
+            "start": "2024-07-11T10:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Simulating quantum molecular dynamics with Julia",
+            "start": "2024-07-11T11:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Computer-Aided Design of Quantum Integrated Circuits",
+            "start": "2024-07-11T11:10:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Tensor network for quantum error correction",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Piccolo.jl: an integrated stack for quantum optimal control",
+            "start": "2024-07-11T14:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Composable API for Quantum Networking Protocols",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "On physics-informed automatic differentiation",
+            "start": "2024-07-11T15:40:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Equivalence Checking of Dynamic Quantum Circuits",
+            "start": "2024-07-11T15:50:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "ITensorNetworks.jl",
+            "start": "2024-07-11T16:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Projector Monte Carlo and exact diagonalisation with Rimu.jl",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Policy Enforcement in Julia Enterprise Applications with OPA",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "ExponentialFamilyManifolds.jl: Advancing Probabilistic Modeling",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "BLASPhemy",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Finite Element Modeling of Magnetic Fields in Julia",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "RayTraceHeatTransfer.jl: 2D enclosure radiative heat transfer",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Julia User & Developer Survey 2024",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "DFTK.jl: 5 years of a multidisciplinary electronic-structure cod",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Developing Supercomputing Geoscience Applications using Julia",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Portable communications interface for Earth System Model",
+            "start": "2024-07-12T14:22:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Seamless transition from single-core Python to Julia Multi-GPU",
+            "start": "2024-07-12T14:44:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Updates and Advances in CUDA.jl and oneAPI.jl",
+            "start": "2024-07-12T15:06:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "Applications of Distributed Task Parallelism",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "libtrixi: Serving legacy Fortran codes with simulations in Julia",
+            "start": "2024-07-12T16:02:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "SeismicWaves.jl: a wave simulation package for FWI on multi-xPUs",
+            "start": "2024-07-12T16:24:00+02:00",
+            "room": "Function (4.1)"
+        },
+        {
+            "title": "A fast and flexible CFD solver with heterogeneous execution",
+            "start": "2024-07-12T16:46:00+02:00",
+            "room": "Function (4.1)"
+        }
+    ],
+    "If (1.1)": [
+        {
+            "title": "MIToS Evolution: Riding the Bioinformatics Wave",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Combined Stochastic Models for Cancer Patient Trajectories",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Structural Bioinformatics with BiochemicalAlgorithms.jl",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "The personalisation of cardiovascuar models using Julia",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Tools for agent-based modelling in developmental biology",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "NetSurvival.jl: A glimpse into relative survival analysis",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Cognitive computational modeling made easy with Julia",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "NeuroDynamics.jl: Next generation models in neuroscience",
+            "start": "2024-07-10T15:40:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Integrative Stochastic Modeling of Infectious Disease with Julia",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Fast, Elegant, Set-oriented Numerical Analysis using GAIO.jl",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Real Time ODEs for Sound Synthesis and Parameter Exploration",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Solve Fractional Differential Equation with FractionalDiffEq.jl",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Few-body integrator with time-reversible adaptivity in Julia",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "How I created a hosted notebook service for Pluto",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "DataToFunctions.jl: Representing transformed data as a function",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Explainable AI in the LIME-light",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Risks and Mitigations for a Safe and Responsible AI",
+            "start": "2024-07-11T11:15:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Predicting the Spring Classics of cycling with my first NN",
+            "start": "2024-07-11T12:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Computer vision at the Dutch Tennis Federation",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Enhancing Event Analysis at Scale: Leveraging Tracking Data",
+            "start": "2024-07-11T14:45:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "How I lost 1000€ betting on CS:GO with machine learning",
+            "start": "2024-07-11T15:45:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "🌳 The taller the tree, the harder the fall.",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Literate package development using Pluto",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Build real-time processes with Pluto's reactivity",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "🎈 Pluto.jl – Interactive package development and debugging",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Quarto Extensions for the Julia Community",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "SummaryTables: Publication-ready tables in docx HTML LaTeX Typst",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Jlyfish: Reproducible documents with Julia and Typst",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "TidierPlots.jl: Bringing ggplot2 to Julia",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "What's new with Makie.jl?",
+            "start": "2024-07-12T12:10:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Interactive Dashboards with WGLMakie and Bonito",
+            "start": "2024-07-12T12:20:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Optimization Methods for Robot Motion Planning in JuMP",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "GeoCombSurfX - exploring properties of polygonal complexes",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Attractors.jl: next-gen (multi-)stability analysis",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Using KeplerGl Visualizations in Pluto",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "What's new in QML.jl",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Rosenbrock methods within OrdinaryDiffEq.jl",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "If (1.1)"
+        },
+        {
+            "title": "Automated Theorem Proving with dL in Julia",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "If (1.1)"
+        }
+    ],
+    "TU-Eindhoven -1.350": [
+        {
+            "title": "Productive Parallel Programming with Dagger.jl",
+            "start": "2024-07-09T09:00:00+02:00",
+            "room": "TU-Eindhoven -1.350"
+        },
+        {
+            "title": "Hands-on with Julia for HPC on GPUs and CPUs",
+            "start": "2024-07-09T13:30:00+02:00",
+            "room": "TU-Eindhoven -1.350"
+        }
+    ],
+    "TU-Eindhoven 0.242": [
+        {
+            "title": "Julia for Systems Biology; generating personalized models",
+            "start": "2024-07-09T09:00:00+02:00",
+            "room": "TU-Eindhoven 0.242"
+        },
+        {
+            "title": "Writing and maintaining an exceptional Documentation",
+            "start": "2024-07-09T13:30:00+02:00",
+            "room": "TU-Eindhoven 0.242"
+        }
+    ],
+    "TU-Eindhoven -1.354": [
+        {
+            "title": "Hierarchical Component-Based Modeling with ModelingToolkit.jl",
+            "start": "2024-07-09T09:00:00+02:00",
+            "room": "TU-Eindhoven -1.354"
+        },
+        {
+            "title": "Scientific Machine Learning using Functional Mock-Up Units",
+            "start": "2024-07-09T13:30:00+02:00",
+            "room": "TU-Eindhoven -1.354"
+        }
+    ],
+    "Else (1.3)": [
+        {
+            "title": "Raising the Ki of a SciML model",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "SymbolicIndexingInterface.jl: Symbolic Indexing for Everyone",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "JuliaSim Modeling Language: Composing Complex Systems with MTK",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Updates to Standard Library & The Native DSL of ModelingToolkit",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "State of Julia's SciML Ecosystem",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "PEtab.jl - Efficient parameter estimation for dynamic models",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Docs, CI Tests, Error Messages, and Interfaces in Julia's SciML",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Model reparametrization with StructuralIdentifiability.jl",
+            "start": "2024-07-10T15:40:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Personalising Models of Human Blood Sugar using SciML",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "JuliaSim HVAC: Composing thermo-fluid modeling with SciML",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "ProcessSimulator.jl: A Differentiable Chemical Process Simulator",
+            "start": "2024-07-10T16:10:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Fast parameter estimation with PhysicsInformedRegression.jl",
+            "start": "2024-07-10T16:20:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Interpretable Hierarchical Calibration of Agent-Based Models",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "MeshGraphNets.jl - Adaptation of MeshGraphNets as NeuralODE",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "꩜ Coil.jl - Lifting Julia array operations to MLIR.",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "A Deferred Acceptance propensity score package in Julia",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Julia meets Field Programmable Gate Array (FPGA)",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "BERTopic to accelerate Ukrainian aid by the Red Cross",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "The Levels of RAG 🦜",
+            "start": "2024-07-11T11:15:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Scikit-Learn can do THAT?!",
+            "start": "2024-07-11T12:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Evaluating LLM Frameworks",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Maximizing marketplace experimentation",
+            "start": "2024-07-11T14:45:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Cloud? No Thanks! I’m Gonna Run GenAI on My AI PC",
+            "start": "2024-07-11T15:45:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Causal Forecasting: How to disentangle causal effects",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "GNSSReceiver GNSS signal processing and positioning in real time",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Bayesian non-linear mixed effects model for safer powder storage",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Ray.jl: Julia runtime and client for the Ray compute framework",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Extrae.jl: Advance profiling of Julia code in HPC clusters",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Parallel algebraic multigrid in Julia with PartitionedArrays.jl",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Trustworthy AI in Julia meets Supercomputing",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Advancements in Peridynamics.jl for Dynamic Fracture Simulations",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "DistributedWorkflow.jl - A task-based workflow system interface",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Rembus.jl: a Pub/Sub and Remote Procedure Call middleware",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "A live coding music performance with Julia",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Randomized Diagonal Estimation in Julia",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Sustainable Development of Stencil-based HPC Applications",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "Robust Calibration of Industrial HVAC and Battery Systems",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "Else (1.3)"
+        },
+        {
+            "title": "QSS: a solver for a large sparse stiff discontinuous system",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "Else (1.3)"
+        }
+    ],
+    "Struct (1.4)": [
+        {
+            "title": "Model-based Design for System Product Development",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "JuliaGeo BoF: shared interfaces and plans for geospatial julia",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Reactive Programmer Support Group",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "🎈 Pluto - Teaching with Pluto",
+            "start": "2024-07-10T15:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Discussing (Gender) Diversity in the Julia Community",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Tsetlin.jl – Tsetlin Machines in Julia",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "🎈 Pluto.jl – is scientific computing accessible?",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Needs and Next Steps for Julia's SciML",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "BinaryBuilder BoF",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Rust and Julia - Birds of a Feather",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "JuliaGPU BoF",
+            "start": "2024-07-11T16:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Plots.jl - Quo vadis?",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Julia in HPC",
+            "start": "2024-07-12T11:30:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Systems biology: community needs, plans, and visions",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "Julia for Fundamental Scientific Questions in Life Sciences",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "Struct (1.4)"
+        },
+        {
+            "title": "One Does Not Simply JuliaCon 🌋",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "Struct (1.4)"
+        }
+    ],
+    "For Loop (3.2)": [
+        {
+            "title": "Accelerate Insights: Code -> Slides, Faster!",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Solving integral equations with Inti.jl",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Building Confidently in Julia with Interface Driven Design",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "AppBundler.jl - Bundle your Julia GUI Application",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Unlocking lightning speed of Julia's Dict with Robinhood Hashing",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Simulating nano-particle trajectories using CMInject.jl",
+            "start": "2024-07-10T14:10:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Natural Science, Computer Modeling and Literate Programming",
+            "start": "2024-07-10T14:20:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "FUSE.jl: the power of Julia for the fusion industry",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Geant4.jl - Particle transport in Julia",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Lyotropic Liquid Crystals: Thermodynamics & Numerical methods",
+            "start": "2024-07-10T15:40:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Efficient, composable solver for non-equilibrium flows",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Jet Reconstruction in Julia",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "FastIce.jl: a massively parallel ice flow model running on GPUs",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Poster Session",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Creating Enterprise grade Desktop applications with Julia",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Julia for the working mathematician: parametric Gröbner bases",
+            "start": "2024-07-11T10:10:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Build a computational thinking - like class for the greater good",
+            "start": "2024-07-11T10:20:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "What's new in Trustworthy AI in Julia (Taija)?",
+            "start": "2024-07-11T10:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Simulating Cognitive Models of Human Decision-Making in Julia",
+            "start": "2024-07-11T11:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Jurassic REPL: vi Finds a Way",
+            "start": "2024-07-11T11:10:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "GPU Acceleration of Julia's SciML: ODEs, Optimization, and more",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Gradients for everyone: a quick guide to autodiff in Julia",
+            "start": "2024-07-11T14:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Train a Llama(2) in Julia!",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "End-to-End AI (E2EAI) with Julia, K0s, and Argo Workflow",
+            "start": "2024-07-11T15:40:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "What's new with Explainable AI in Julia?",
+            "start": "2024-07-11T15:50:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Large Language Models: To Be or Not To Be",
+            "start": "2024-07-11T16:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Gatlab: Computer Algebra and Standard ML modules combined",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Diversity Dinner and Discussion",
+            "start": "2024-07-11T18:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "NeuroTree - A differentiable tree operator for tabular data",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "The general purpose algorithmic differentiation wrapper ADOLC.jl",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "AI Wrote This: Discover Generative AI in Julia",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Causal Machine Learning with CausalELM",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Symbolic AI workflows with Sole.jl",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "What's new with GraphPPL.jl?",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Modern CI/CD Machine Learning workflows using Julia",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Designing satellites constellations with Julia",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "What's new with BifurcationKit.jl",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Kuber.jl: An OpenAPI based Kubernetes client for Julia",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Evaluate LLM synthesized Julia code",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "LASDatasets.jl: A Centralised Package for Handling LAS Data",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "Wave and Ray Optics for Light Based Tomographic 3D printing",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "For Loop (3.2)"
+        },
+        {
+            "title": "What's next for Transducers.jl?",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "For Loop (3.2)"
+        }
+    ],
+    "Method (1.5)": [
+        {
+            "title": "Teaching Structural Bioinformatics with BiochemicalAlgorithms.jl",
+            "start": "2024-07-10T10:50:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Notes from an All-Julia Honours Thesis",
+            "start": "2024-07-10T10:53:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "My Experience With Deep Learning Research in Julia.",
+            "start": "2024-07-10T10:56:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "MaxEntropyGraphs.jl: Random Graphs with JuliaGraphs",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Fast and generic Hidden Markov Models",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Probabilistic inference using contraction of tensor networks",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "OpenAPI.jl for easy HTTP APIs",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "A retrospect on Julia web services: HTTP, performance and memory",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "SpatialDependence.jl: exploratory spatial data analysis",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Curling with Julia: A brief overview of CurlHTTP.jl",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "EditBoundary.jl - a quest to revive structured quad meshes",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Improving the life-cycle of tensor algorithm development",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Large-Scale Mechanistic Modeling of Immune Pathway in Julia",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "ThreadedDenseSparseMul.jl: Multi-threaded Dense-Sparse Matmul.",
+            "start": "2024-07-10T19:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Hestia.jl - Modeling and Control of Heat Conduction",
+            "start": "2024-07-10T19:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Herb.jl: Teaching programs how to program with program synthesis",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "FMIExchange.jl: Foreign Models Through a Familiar Interface",
+            "start": "2024-07-11T10:10:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Enabling Spectral Indices Computation with SpectralIndices.jl",
+            "start": "2024-07-11T10:20:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Fast probabilistic inference for ODEs with ProbNumDiffEq.jl",
+            "start": "2024-07-11T10:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "What’s new with GeoInterface.jl: traits for interoperability",
+            "start": "2024-07-11T11:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Writing allocation-free Julia code with AllocCheck.jl",
+            "start": "2024-07-11T11:10:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Recursive Causal Discovery with Julia",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "💰 Trillion Dollar Words in Julia",
+            "start": "2024-07-11T14:20:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Using Julia as part of an Anomaly Detection pipeline",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Working with Open Street Map spatial data in Julia",
+            "start": "2024-07-11T15:40:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Strategic Data Handling in Julia",
+            "start": "2024-07-11T15:50:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Forecasting Mental Wellness of Students using Julia",
+            "start": "2024-07-11T16:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Cost-Efficient Experimental Designs, aka CEEDesigns.jl",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "What's new in the Julia extension for VS Code",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "GenX: a high-performance tool for electricity system planning",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Investigating Crimes using Julia",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "TSearch: An Experimental Search System for the Julia Community",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "InferOpt.jl: combinatorial optimization and machine learning",
+            "start": "2024-07-12T11:10:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "All that's new and improved in Optimization.jl",
+            "start": "2024-07-12T11:20:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Exploring musical tunings with Julia",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "TotalViewITCH.jl - Parse the messages in Julia!",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "JSOSuite.jl: one-stop solution for optimization",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Real‑Time Airborne Magnetic Navigation with MagNav.jl",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "'What's the plan?', asked my robot",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "What's new in GraphBLAS.jl",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "BoxCox.jl -- A lightweight package with nice extensions",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "MuJoCo.jl: A case study for developing Julia bindings",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "SequentialCompression.jl: Out-of-core multi array compression",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "HighDimPDE.jl: Solving high dimensional PDEs using deep learning",
+            "start": "2024-07-12T16:10:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "Cairn.jl: Enhanced Molecular Dynamics for Active Learning",
+            "start": "2024-07-12T16:20:00+02:00",
+            "room": "Method (1.5)"
+        },
+        {
+            "title": "cadCAD.jl: A Modeling Library for Generalized Dynamical Systems",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "Method (1.5)"
+        }
+    ],
+    "Reflection (1.2)": [
+        {
+            "title": "Separable Functions",
+            "start": "2024-07-10T18:30:00+02:00",
+            "room": "Reflection (1.2)"
+        }
+    ],
+    "REPL (2, main stage)": [
+        {
+            "title": "Opening Ceremony",
+            "start": "2024-07-10T08:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "State of Julia 2024",
+            "start": "2024-07-10T09:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Juliet&Romeo; making Julia a hard real-time robot language",
+            "start": "2024-07-10T10:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "JuliaSim: Bringing Julia to Industrial Modeling and Simulation",
+            "start": "2024-07-10T10:15:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Adventures in Julia IR: Plundering Core.Compiler",
+            "start": "2024-07-10T11:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Compiler plugins and non-native execution caching",
+            "start": "2024-07-10T11:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Secure numerical computations using fully homomorphic encryption",
+            "start": "2024-07-10T12:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "The cryptography packages in Julia 🔐: What is missing?",
+            "start": "2024-07-10T14:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "`Memory` in Julia",
+            "start": "2024-07-10T14:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "App support in Pkg",
+            "start": "2024-07-10T15:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "JuliaScript.jl - simply run julia scripts at max speed",
+            "start": "2024-07-10T15:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "ScopedValues -- What are they good for",
+            "start": "2024-07-10T15:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Renovating Automated Dependency Management in Julia",
+            "start": "2024-07-10T16:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Pkg en route: the logistics behind the package manager",
+            "start": "2024-07-10T16:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "The `public` keyword and how public APIs work in Julia",
+            "start": "2024-07-10T17:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Materials Modeling: Bonding across atoms, code, and people",
+            "start": "2024-07-10T17:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Closing Ceremony",
+            "start": "2024-07-10T18:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Opening Ceremony",
+            "start": "2024-07-11T08:45:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Software at ASML: the Force behind making microchips",
+            "start": "2024-07-11T09:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Language 1.5 revisited",
+            "start": "2024-07-11T10:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "BinaryBuilder 2: Return of the Compilers",
+            "start": "2024-07-11T10:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Infiltrator.jl - No-Overhead Breakpoints in Julia",
+            "start": "2024-07-11T11:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "What's New in GenieFramework?",
+            "start": "2024-07-11T11:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "AI Hardware and Real-world AI",
+            "start": "2024-07-11T11:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Dude, where's my code?",
+            "start": "2024-07-11T14:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Static Analysis of Julia Code",
+            "start": "2024-07-11T14:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Julia Compiler Secrets - Static Analysis",
+            "start": "2024-07-11T15:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Julia in Air Gapped Environments",
+            "start": "2024-07-11T15:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Interfaces.jl: base and package interface tests for your objects",
+            "start": "2024-07-11T15:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "New Ways to Compile Julia",
+            "start": "2024-07-11T16:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "GreenSpeed: Sustainable Chemical Synthesis Right from the Start",
+            "start": "2024-07-11T16:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Sonic Pi - Live Coding as a tool for next-gen education.",
+            "start": "2024-07-11T17:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Closing Ceremony",
+            "start": "2024-07-11T18:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Opening Ceremony",
+            "start": "2024-07-12T08:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Natural Artificial Intelligence",
+            "start": "2024-07-12T09:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "CodeEvaluation.jl: emulating Julia code evaluations",
+            "start": "2024-07-12T10:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Building a customized application dashboard with Pluto.jl",
+            "start": "2024-07-12T10:20:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Building Bridges with Julia",
+            "start": "2024-07-12T10:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Molly.jl: Molecular dynamics in Julia",
+            "start": "2024-07-12T11:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Migrating from Julia 0.4 to Julia 1.6",
+            "start": "2024-07-12T11:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "JuliaHub's AskAI: Enhancing ChatGPT with julia-specific context",
+            "start": "2024-07-12T11:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "What's new with Turing.jl and its ecosystem",
+            "start": "2024-07-12T12:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Julia.Kitchen 👨‍🍳: The finest Julia recipes!",
+            "start": "2024-07-12T14:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Python.jl—Seamlessly blend Python and Julia",
+            "start": "2024-07-12T14:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Kezdi.jl: A data analysis package for economists",
+            "start": "2024-07-12T15:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Horus - Robust Background Jobs in Julia",
+            "start": "2024-07-12T15:40:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Service monitoring with Prometheus.jl",
+            "start": "2024-07-12T15:50:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "RxEnvironments: Reactive multi-agent environments",
+            "start": "2024-07-12T16:00:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "A cloud-native parallel data processing application in Julia",
+            "start": "2024-07-12T16:30:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Why I use Julia for Quantum Computing",
+            "start": "2024-07-12T17:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        },
+        {
+            "title": "Closing Ceremony",
+            "start": "2024-07-12T18:10:00+02:00",
+            "room": "REPL (2, main stage)"
+        }
+    ],
+    "TU-Eindhoven 0.264": [
+        {
+            "title": "Introduction to Julia",
+            "start": "2024-07-09T09:00:00+02:00",
+            "room": "TU-Eindhoven 0.264"
+        },
+        {
+            "title": "Julia and Rust - Safer abstractions and FFI Workshop",
+            "start": "2024-07-09T13:30:00+02:00",
+            "room": "TU-Eindhoven 0.264"
+        }
+    ]
+}
