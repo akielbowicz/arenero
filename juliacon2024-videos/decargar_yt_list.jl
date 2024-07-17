@@ -30,7 +30,7 @@ videos = map(s-> "https://www.youtube.com/watch?v=$(s[2])", x)
 talks_endpoint = "https://pretalx.com/api/events/juliacon2024/talks/"
 rooms_endpoint = "https://pretalx.com/api/events/juliacon2024/rooms/"
 
-using JSON3
+using JSON3, Dates
 # talks_str = String(HTTP.get(talks_endpoint; query=["limit"=>500]).body)
 talks_str = open(io->read(io, String), "talks.json")
 talks = JSON3.read(talks_str)
@@ -68,8 +68,10 @@ vds = [
 
 # ("JuliaCon 2024 | For Loop Room | Day 2", "https://www.youtube.com/watch?v=ZKt0tiG5ajw")
 # ("JuliaCon 2024 | Method Room | Day 2", "https://www.youtube.com/watch?v=gbtTJQFVijM")
-("JuliaCon 2024 | REPL Main Stage | Day 2", "https://www.youtube.com/watch?v=Bo3k4oD1Avg")
-("JuliaCon 2024 | Function Room | Day 2", "https://www.youtube.com/watch?v=v0RPD4eSzVE")
+
+# ("JuliaCon 2024 | REPL Main Stage | Day 2", "https://www.youtube.com/watch?v=Bo3k4oD1Avg")
+
+("JuliaCon 2024 | Function Room | Day 2", "https://www.youtube.com/watch?v=v0RPD4eSzVE") # 3880
 ("JuliaCon 2024 | While Loop Room | Day 2", "https://www.youtube.com/watch?v=PzgFzorRtoo")
 
 ("JuliaCon 2024 | REPL Main Stage | Day 3", "https://www.youtube.com/watch?v=t6st0vo0hh4")
