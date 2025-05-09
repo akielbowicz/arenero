@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Metadata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Device Metadata</h1>
+    <table id="metadata-table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Metadata rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script>
+        const metadata = {
+            "User Agent": navigator.userAgent,
+            "Platform": navigator.platform,
+            "Language": navigator.language,
+            "Online Status": navigator.onLine ? "Online" : "Offline",
+            "Screen Resolution": `${screen.width} x ${screen.height}`,
+            "Timezone": Intl.DateTimeFormat().resolvedOptions().timeZone,
+        };
+
+        // Attempt to get geolocation data
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    metadata["Location"] = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`;
+                    populateTable();
+                },
+                (error) => {
+                    metadata["Location"] = "Permission denied or unavailable";
+                    populateTable();
+                }
+            );
+        } else {
+            metadata["Location"] = "Geolocation not supported";
+            populateTable();
+        }
+
+        function populateTable() {
+            const tableBody = document.getElementById("metadata-table").querySelector("tbody");
+            tableBody.innerHTML = ""; // Clear existing rows
+
+            for (const [key, value] of Object.entries(metadata)) {
+                const row = document.createElement("tr");
+                const propertyCell = document.createElement("td");
+                const valueCell = document.createElement("td");
+
+                propertyCell.textContent = key;
+                valueCell.textContent = value;
+
+                row.appendChild(propertyCell);
+                row.appendChild(valueCell);
+                tableBody.appendChild(row);
+            }
+        }
+
+        // Populate table initially with available metadata
+        populateTable();
+    </script>
+</body>
+
+</html>
