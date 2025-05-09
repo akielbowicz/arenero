@@ -1,0 +1,114 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos#demo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        video, canvas {
+            border: 1px solid #ccc;
+            margin: 0 10px;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Camera Capture</h1>
+    <div class="video-canvas-container">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="button-container">
+        <button id="capture">Capture</button>
+        <button id="save">Save Image</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const captureButton = document.getElementById('capture');
+        const saveButton = document.getElementById('save');
+        const startCameraButton = document.createElement('button');
+        startCameraButton.textContent = 'Start Camera';
+        document.body.insertBefore(startCameraButton, document.querySelector('.video-canvas-container'));
+
+        startCameraButton.addEventListener('click', () => {
+            navigator.mediaDevices.getUserMedia({
+                video: {
+                    facingMode: "environment",
+                }
+            }).then(stream => {
+                    video.srcObject = stream;
+                    startCameraButton.style.display = 'none'; // Hide the button after starting the camera
+                })
+                .catch(err => {
+                    alert('Error accessing the camera: ' + err);
+                });
+        });
+
+        captureButton.addEventListener('click', () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        });
+
+        saveButton.addEventListener('click', () => {
+            const image = canvas.toDataURL('image/png');
+            fetch('/save-image', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ 
+                    image: image, 
+                    name: new Date().toISOString() 
+                })
+            }).then(response => {
+                if (response.ok) {
+                    response.json().then(data => {
+                        alert(`Image saved successfully! Name: ${data.file_name}`);
+                    });
+                    const context = canvas.getContext('2d');
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                } else {
+                    alert('Failed to save image.');
+                }
+            }).catch(error => {
+                alert('Error saving image: ' + error);
+            });
+        });
+    </script>
+</body>
+
+</html>
