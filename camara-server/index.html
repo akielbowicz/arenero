@@ -1,0 +1,219 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos#demo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 90%;
+            max-width: 720px;
+            border: 1px solid #ccc;
+        }
+
+        .canvas-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .canvas-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            margin-bottom: 20px; /* Add spacing between rows */
+        }
+
+        canvas {
+            width: 100%;
+            /* aspect-ratio: 16 / 9; Maintain aspect ratio */
+            border: 2px solid grey;
+            box-sizing: border-box;
+        }
+
+        canvas.taken {
+            border-color: green;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            flex: 1 1 auto; /* Allow buttons to resize */
+            max-width: 200px; /* Prevent buttons from becoming too wide */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            .canvas-group {
+                width: 90%; /* Make canvases take full width on smaller screens */
+            }
+
+            button {
+                font-size: 14px; /* Reduce button font size on smaller screens */
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Books Capture</h1>
+    <div class="video-container">
+        <video id="video" autoplay></video>
+    </div>
+    <div class="button-container">
+        <button id="capture-cover">Capture Cover</button>
+        <button id="capture-edition">Capture Edition Info</button>
+    </div>
+    <div class="canvas-container">
+        <div class="canvas-group">
+            <canvas id="canvas-cover"></canvas>
+            <div class="button-group">
+                <button id="download-cover">Download Cover Image</button>
+            </div>
+        </div>
+        <div class="canvas-group">
+            <canvas id="canvas-edition"></canvas>
+            <div class="button-group">
+                <button id="download-edition">Download Edition Image</button>
+            </div>
+        </div>
+    </div>
+    <button id="save">Save in server</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const canvasCover = document.getElementById('canvas-cover');
+        const canvasEdition = document.getElementById('canvas-edition');
+        const captureCoverButton = document.getElementById('capture-cover');
+        const captureEditionButton = document.getElementById('capture-edition');
+        const saveButton = document.getElementById('save');
+        const downloadCoverButton = document.getElementById('download-cover'); // New Button
+        const downloadEditionButton = document.getElementById('download-edition'); // New Button
+        const startCameraButton = document.createElement('button');
+        let timestamp = ''; // Shared timestamp variable
+
+        startCameraButton.textContent = 'Start Camera';
+        document.body.insertBefore(startCameraButton, document.querySelector('.video-container'));
+
+        startCameraButton.addEventListener('click', () => {
+            navigator.mediaDevices.getUserMedia({
+                video: {
+                    width: { ideal: 1080 },
+                    height: { ideal: 1920 },
+                    facingMode: "environment",
+                }
+            }).then(stream => {
+                video.srcObject = stream;
+                startCameraButton.style.display = 'none';
+            }).catch(err => {
+                alert('Error accessing the camera: ' + err);
+            });
+        });
+
+        captureCoverButton.addEventListener('click', () => {
+            canvasCover.width = video.videoWidth;
+            canvasCover.height = video.videoHeight;
+            const context = canvasCover.getContext('2d');
+            context.drawImage(video, 0, 0, canvasCover.width, canvasCover.height);
+            canvasCover.classList.add('taken'); // Add green border
+            timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Update timestamp
+        });
+
+        captureEditionButton.addEventListener('click', () => {
+            canvasEdition.width = video.videoWidth;
+            canvasEdition.height = video.videoHeight;
+            const context = canvasEdition.getContext('2d');
+            context.drawImage(video, 0, 0, canvasEdition.width, canvasEdition.height);
+            canvasEdition.classList.add('taken'); // Add green border
+            timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Update timestamp
+        });
+
+        saveButton.addEventListener('click', () => {
+            const coverImage = canvasCover.toDataURL('image/png');
+            const editionImage = canvasEdition.toDataURL('image/png');
+
+            fetch('/save-images', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    coverImage: coverImage,
+                    editionImage: editionImage,
+                    timestamp: timestamp
+                })
+            }).then(response => {
+                if (response.ok) {
+                    response.json().then(data => {
+                        alert(`Images saved successfully! Cover: ${data.cover_file_name}, Edition: ${data.edition_file_name}`);
+                    });
+                    const contextCover = canvasCover.getContext('2d');
+                    const contextEdition = canvasEdition.getContext('2d');
+                    contextCover.clearRect(0, 0, canvasCover.width, canvasCover.height);
+                    contextEdition.clearRect(0, 0, canvasEdition.width, canvasEdition.height);
+                    canvasCover.classList.remove('taken'); // Reset border
+                    canvasEdition.classList.remove('taken'); // Reset border
+                } else {
+                    alert('Failed to save images.');
+                }
+            }).catch(error => {
+                alert('Error saving images: ' + error);
+            });
+        });
+
+        downloadCoverButton.addEventListener('click', () => {
+            const coverImage = canvasCover.toDataURL('image/png');
+            const coverLink = document.createElement('a');
+            coverLink.href = coverImage;
+            coverLink.download = `${timestamp}_coverImage.png`;
+            coverLink.click();
+        });
+
+        downloadEditionButton.addEventListener('click', () => {
+            const editionImage = canvasEdition.toDataURL('image/png');
+            const editionLink = document.createElement('a');
+            editionLink.href = editionImage;
+            editionLink.download = `${timestamp}_editionImage.png`;
+            editionLink.click();
+        });
+    </script>
+</body>
+
+</html>
