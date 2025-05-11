@@ -31,13 +31,22 @@
         .canvas-container {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
             width: 100%;
             margin-top: 20px;
         }
 
-        canvas {
+        .canvas-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 45%;
-            /* aspect-ratio: 9 / 16; Maintain aspect ratio */
+            margin-bottom: 20px; /* Add spacing between rows */
+        }
+
+        canvas {
+            width: 100%;
+            /* aspect-ratio: 16 / 9; Maintain aspect ratio */
             border: 2px solid grey;
             box-sizing: border-box;
         }
@@ -46,35 +55,67 @@
             border-color: green;
         }
 
-        .button-container {
-            position: fixed;
-            bottom: 20px;
+        .button-group {
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
             gap: 10px;
+            margin-top: 10px;
         }
 
         button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            flex: 1 1 auto; /* Allow buttons to resize */
+            max-width: 200px; /* Prevent buttons from becoming too wide */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            .canvas-group {
+                width: 90%; /* Make canvases take full width on smaller screens */
+            }
+
+            button {
+                font-size: 14px; /* Reduce button font size on smaller screens */
+                padding: 8px 16px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Camera Capture</h1>
+    <h1>Books Capture</h1>
     <div class="video-container">
         <video id="video" autoplay></video>
-    </div>
-    <div class="canvas-container">
-        <canvas id="canvas-cover"></canvas>
-        <canvas id="canvas-edition"></canvas>
     </div>
     <div class="button-container">
         <button id="capture-cover">Capture Cover</button>
         <button id="capture-edition">Capture Edition Info</button>
-        <button id="save">Save Images</button>
     </div>
+    <div class="canvas-container">
+        <div class="canvas-group">
+            <canvas id="canvas-cover"></canvas>
+            <div class="button-group">
+                <button id="download-cover">Download Cover Image</button>
+            </div>
+        </div>
+        <div class="canvas-group">
+            <canvas id="canvas-edition"></canvas>
+            <div class="button-group">
+                <button id="download-edition">Download Edition Image</button>
+            </div>
+        </div>
+    </div>
+    <button id="save">Save in server</button>
 
     <script>
         const video = document.getElementById('video');
@@ -83,7 +124,11 @@
         const captureCoverButton = document.getElementById('capture-cover');
         const captureEditionButton = document.getElementById('capture-edition');
         const saveButton = document.getElementById('save');
+        const downloadCoverButton = document.getElementById('download-cover'); // New Button
+        const downloadEditionButton = document.getElementById('download-edition'); // New Button
         const startCameraButton = document.createElement('button');
+        let timestamp = ''; // Shared timestamp variable
+
         startCameraButton.textContent = 'Start Camera';
         document.body.insertBefore(startCameraButton, document.querySelector('.video-container'));
 
@@ -108,6 +153,7 @@
             const context = canvasCover.getContext('2d');
             context.drawImage(video, 0, 0, canvasCover.width, canvasCover.height);
             canvasCover.classList.add('taken'); // Add green border
+            timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Update timestamp
         });
 
         captureEditionButton.addEventListener('click', () => {
@@ -116,6 +162,7 @@
             const context = canvasEdition.getContext('2d');
             context.drawImage(video, 0, 0, canvasEdition.width, canvasEdition.height);
             canvasEdition.classList.add('taken'); // Add green border
+            timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Update timestamp
         });
 
         saveButton.addEventListener('click', () => {
@@ -130,7 +177,7 @@
                 body: JSON.stringify({
                     coverImage: coverImage,
                     editionImage: editionImage,
-                    timestamp: new Date().toISOString()
+                    timestamp: timestamp
                 })
             }).then(response => {
                 if (response.ok) {
@@ -149,6 +196,22 @@
             }).catch(error => {
                 alert('Error saving images: ' + error);
             });
+        });
+
+        downloadCoverButton.addEventListener('click', () => {
+            const coverImage = canvasCover.toDataURL('image/png');
+            const coverLink = document.createElement('a');
+            coverLink.href = coverImage;
+            coverLink.download = `${timestamp}_coverImage.png`;
+            coverLink.click();
+        });
+
+        downloadEditionButton.addEventListener('click', () => {
+            const editionImage = canvasEdition.toDataURL('image/png');
+            const editionLink = document.createElement('a');
+            editionLink.href = editionImage;
+            editionLink.download = `${timestamp}_editionImage.png`;
+            editionLink.click();
         });
     </script>
 </body>
