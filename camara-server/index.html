@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Capture</title>
     <style>
         body {
@@ -15,16 +15,35 @@
             font-family: Arial, sans-serif;
         }
 
-        .video-canvas-container {
+        .video-container {
+            width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
             margin-bottom: 20px;
         }
 
-        video, canvas {
+        video {
+            width: 90%;
+            max-width: 720px;
             border: 1px solid #ccc;
-            margin: 0 10px;
+        }
+
+        .canvas-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        canvas {
+            width: 45%;
+            /* aspect-ratio: 9 / 16; Maintain aspect ratio */
+            border: 2px solid grey;
+            box-sizing: border-box;
+        }
+
+        canvas.taken {
+            border-color: green;
         }
 
         .button-container {
@@ -44,8 +63,10 @@
 
 <body>
     <h1>Camera Capture</h1>
-    <div class="video-canvas-container">
+    <div class="video-container">
         <video id="video" autoplay></video>
+    </div>
+    <div class="canvas-container">
         <canvas id="canvas-cover"></canvas>
         <canvas id="canvas-edition"></canvas>
     </div>
@@ -64,20 +85,21 @@
         const saveButton = document.getElementById('save');
         const startCameraButton = document.createElement('button');
         startCameraButton.textContent = 'Start Camera';
-        document.body.insertBefore(startCameraButton, document.querySelector('.video-canvas-container'));
+        document.body.insertBefore(startCameraButton, document.querySelector('.video-container'));
 
         startCameraButton.addEventListener('click', () => {
             navigator.mediaDevices.getUserMedia({
                 video: {
+                    width: { ideal: 1080 },
+                    height: { ideal: 1920 },
                     facingMode: "environment",
                 }
             }).then(stream => {
-                    video.srcObject = stream;
-                    startCameraButton.style.display = 'none'; // Hide the button after starting the camera
-                })
-                .catch(err => {
-                    alert('Error accessing the camera: ' + err);
-                });
+                video.srcObject = stream;
+                startCameraButton.style.display = 'none';
+            }).catch(err => {
+                alert('Error accessing the camera: ' + err);
+            });
         });
 
         captureCoverButton.addEventListener('click', () => {
@@ -85,6 +107,7 @@
             canvasCover.height = video.videoHeight;
             const context = canvasCover.getContext('2d');
             context.drawImage(video, 0, 0, canvasCover.width, canvasCover.height);
+            canvasCover.classList.add('taken'); // Add green border
         });
 
         captureEditionButton.addEventListener('click', () => {
@@ -92,6 +115,7 @@
             canvasEdition.height = video.videoHeight;
             const context = canvasEdition.getContext('2d');
             context.drawImage(video, 0, 0, canvasEdition.width, canvasEdition.height);
+            canvasEdition.classList.add('taken'); // Add green border
         });
 
         saveButton.addEventListener('click', () => {
@@ -117,6 +141,8 @@
                     const contextEdition = canvasEdition.getContext('2d');
                     contextCover.clearRect(0, 0, canvasCover.width, canvasCover.height);
                     contextEdition.clearRect(0, 0, canvasEdition.width, canvasEdition.height);
+                    canvasCover.classList.remove('taken'); // Reset border
+                    canvasEdition.classList.remove('taken'); // Reset border
                 } else {
                     alert('Failed to save images.');
                 }
