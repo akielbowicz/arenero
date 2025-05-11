@@ -46,17 +46,21 @@
     <h1>Camera Capture</h1>
     <div class="video-canvas-container">
         <video id="video" autoplay></video>
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas-cover"></canvas>
+        <canvas id="canvas-edition"></canvas>
     </div>
     <div class="button-container">
-        <button id="capture">Capture</button>
-        <button id="save">Save Image</button>
+        <button id="capture-cover">Capture Cover</button>
+        <button id="capture-edition">Capture Edition Info</button>
+        <button id="save">Save Images</button>
     </div>
 
     <script>
         const video = document.getElementById('video');
-        const canvas = document.getElementById('canvas');
-        const captureButton = document.getElementById('capture');
+        const canvasCover = document.getElementById('canvas-cover');
+        const canvasEdition = document.getElementById('canvas-edition');
+        const captureCoverButton = document.getElementById('capture-cover');
+        const captureEditionButton = document.getElementById('capture-edition');
         const saveButton = document.getElementById('save');
         const startCameraButton = document.createElement('button');
         startCameraButton.textContent = 'Start Camera';
@@ -76,36 +80,48 @@
                 });
         });
 
-        captureButton.addEventListener('click', () => {
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            const context = canvas.getContext('2d');
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        captureCoverButton.addEventListener('click', () => {
+            canvasCover.width = video.videoWidth;
+            canvasCover.height = video.videoHeight;
+            const context = canvasCover.getContext('2d');
+            context.drawImage(video, 0, 0, canvasCover.width, canvasCover.height);
+        });
+
+        captureEditionButton.addEventListener('click', () => {
+            canvasEdition.width = video.videoWidth;
+            canvasEdition.height = video.videoHeight;
+            const context = canvasEdition.getContext('2d');
+            context.drawImage(video, 0, 0, canvasEdition.width, canvasEdition.height);
         });
 
         saveButton.addEventListener('click', () => {
-            const image = canvas.toDataURL('image/png');
-            fetch('/save-image', {
+            const coverImage = canvasCover.toDataURL('image/png');
+            const editionImage = canvasEdition.toDataURL('image/png');
+
+            fetch('/save-images', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ 
-                    image: image, 
-                    name: new Date().toISOString() 
+                body: JSON.stringify({
+                    coverImage: coverImage,
+                    editionImage: editionImage,
+                    timestamp: new Date().toISOString()
                 })
             }).then(response => {
                 if (response.ok) {
                     response.json().then(data => {
-                        alert(`Image saved successfully! Name: ${data.file_name}`);
+                        alert(`Images saved successfully! Cover: ${data.cover_file_name}, Edition: ${data.edition_file_name}`);
                     });
-                    const context = canvas.getContext('2d');
-                    context.clearRect(0, 0, canvas.width, canvas.height);
+                    const contextCover = canvasCover.getContext('2d');
+                    const contextEdition = canvasEdition.getContext('2d');
+                    contextCover.clearRect(0, 0, canvasCover.width, canvasCover.height);
+                    contextEdition.clearRect(0, 0, canvasEdition.width, canvasEdition.height);
                 } else {
-                    alert('Failed to save image.');
+                    alert('Failed to save images.');
                 }
             }).catch(error => {
-                alert('Error saving image: ' + error);
+                alert('Error saving images: ' + error);
             });
         });
     </script>
