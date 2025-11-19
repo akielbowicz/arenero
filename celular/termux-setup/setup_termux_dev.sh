@@ -11,20 +11,20 @@ echo "╚═══════════════════════�
 echo ""
 
 # Step 1: Install packages
-echo "[1/9] Installing core packages..."
+echo "[1/11] Installing core packages..."
 pkg install -y nushell zoxide yazi starship ripgrep bat helix zk carapace nodejs fzf
 
 # Step 2: Install npm packages
-echo "[2/9] Installing npm global packages..."
+echo "[2/11] Installing npm global packages..."
 npm install -g @anthropic-ai/claude-code
 
 # Step 3: Create directory structure
-echo "[3/9] Creating directory structure..."
+echo "[3/11] Creating directory structure..."
 mkdir -p ~/.config/{nushell,yazi,bat,ripgrep,helix/themes,babashka}
 mkdir -p ~/notes/{daily,.zk/templates}
 
 # Step 4: Configure Nushell
-echo "[4/9] Configuring Nushell..."
+echo "[4/11] Configuring Nushell..."
 cat > ~/.config/nushell/config.nu << 'EOF'
 # Nushell Configuration - High-contrast for monochromacy
 $env.EDITOR = "helix"
@@ -125,7 +125,7 @@ $env.config = ($env.config | upsert hooks {
 EOF
 
 # Step 5: Environment config
-echo "[5/9] Configuring environment..."
+echo "[5/11] Configuring environment..."
 cat > ~/.config/nushell/env.nu << 'EOF'
 $env.BAT_THEME = "ansi"
 $env.FZF_DEFAULT_OPTS = "--color=bw --layout=reverse --border --info=inline --prompt='> ' --pointer='▶' --marker='✓'"
@@ -134,7 +134,7 @@ $env.EDITOR = "helix"
 EOF
 
 # Step 6: Tool configs
-echo "[6/9] Configuring tools..."
+echo "[6/11] Configuring tools..."
 
 # Git
 cat > ~/.gitconfig << 'EOF'
@@ -237,7 +237,7 @@ format = "([$all_status]($style) )"
 EOF
 
 # Step 7: Yazi
-echo "[7/9] Configuring Yazi..."
+echo "[7/11] Configuring Yazi..."
 cat > ~/.config/yazi/yazi.toml << 'EOF'
 [manager]
 show_hidden = false
@@ -251,7 +251,7 @@ pager = "bat"
 EOF
 
 # Step 8: Helix
-echo "[8/9] Configuring Helix..."
+echo "[8/11] Configuring Helix..."
 cat > ~/.config/helix/config.toml << 'EOF'
 theme = "monochrome"
 
@@ -286,8 +286,78 @@ gray = "#808080"
 white = "#FFFFFF"
 EOF
 
-# Step 9: Initialize zk
-echo "[9/9] Initializing zk notebook..."
+# Step 9: Claude Code configuration
+echo "[9/11] Configuring Claude Code..."
+mkdir -p ~/.claude
+
+cat > ~/.claude/settings.json << 'EOF'
+{
+  "alwaysThinkingEnabled": false,
+  "statusLine": {
+    "type": "command",
+    "command": "nu ~/.claude/statusline.nu",
+    "padding": 0
+  }
+}
+EOF
+
+cat > ~/.claude/statusline.nu << 'EOF'
+#!/usr/bin/env nu
+# Claude Code status line - High-contrast monochrome theme
+
+let BOLD = "\u{1b}[1m"
+let REVERSE = "\u{1b}[7m"
+let RESET = "\u{1b}[0m"
+
+let pwd_short = (
+    $env.PWD
+    | str replace $env.HOME "~"
+    | if ($in | str length) > 40 {
+        $"...($in | str substring (($in | str length) - 37)..)"
+    } else {
+        $in
+    }
+)
+
+let git_info = (
+    try {
+        let branch = (git branch --show-current | str trim)
+        let has_changes = (
+            (git diff --quiet; $env.LAST_EXIT_CODE != 0) or
+            (git diff --cached --quiet; $env.LAST_EXIT_CODE != 0)
+        )
+        let status_mark = if $has_changes { "*" } else { "" }
+        $" [($branch)($status_mark)]"
+    } catch {
+        ""
+    }
+)
+
+let time = (date now | format date "%H:%M")
+
+print $"($BOLD)($REVERSE) ($pwd_short)($git_info) ($RESET) ($BOLD)($time)($RESET)"
+EOF
+
+chmod +x ~/.claude/statusline.nu
+
+# Step 10: Termux properties
+echo "[10/11] Configuring Termux properties..."
+cat > ~/.termux/termux.properties << 'EOF'
+### Termux Configuration - High-contrast for monochromacy
+use-black-ui = true
+terminal-cursor-style = block
+terminal-cursor-blink-rate = 500
+terminal-transcript-rows = 5000
+bell-character = vibrate
+back-key = escape
+extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'], \
+              ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]
+EOF
+
+echo "  Note: Run 'termux-reload-settings' to apply Termux changes"
+
+# Step 11: Initialize zk
+echo "[11/11] Initializing zk notebook..."
 cd ~/notes
 if [ ! -f .zk/config.toml ]; then
     zk init --no-input

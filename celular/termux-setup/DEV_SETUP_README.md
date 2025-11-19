@@ -96,8 +96,17 @@ All configurations use high-contrast themes with:
 ├── fzf/
 │   └── fzf.conf       # Fuzzy finder config reference
 ├── starship.toml      # Prompt configuration
-└── babashka/
-    └── bb.edn         # Babashka tasks
+├── babashka/
+│   └── bb.edn         # Babashka tasks
+└── git/
+    └── config         # Git color configuration
+
+~/.claude/
+├── settings.json      # Claude Code settings
+└── statusline.nu      # High-contrast status line script
+
+~/.termux/
+└── termux.properties  # Termux terminal settings
 
 ~/notes/
 ├── .zk/
@@ -157,10 +166,16 @@ claude -c           # Continue previous conversation
 claude --help       # Show available options
 ```
 
-Installed via npm:
-```bash
-npm install -g @anthropic-ai/claude-code
-```
+Installed via npm and configured with:
+- High-contrast status line written in Nushell
+- Status shows: current path, git branch/status, time
+- Uses bold and reverse video for visibility
+
+Configuration files:
+- `~/.claude/settings.json` - Claude Code settings
+- `~/.claude/statusline.nu` - Custom status line script
+
+**Note**: Claude Code uses your terminal's color theme. Termux is configured with `use-black-ui = true` for high contrast.
 
 ## Usage Examples
 
@@ -235,6 +250,9 @@ All tools are configured with:
 3. **Bold/underline/dim** - For visual hierarchy
 4. **High contrast** - Maximum brightness differences
 5. **Clear symbols** - Text-based indicators instead of colors
+6. **Termux black UI** - High-contrast terminal background
+7. **Git colors** - Bold and reverse video for visibility
+8. **Claude status line** - High-contrast ANSI formatting
 
 ## Customization
 
@@ -243,6 +261,9 @@ To modify themes, edit:
 - Helix: `~/.config/helix/themes/monochrome.toml`
 - Starship: `~/.config/starship.toml`
 - Yazi: `~/.config/yazi/theme.toml`
+- Git: `~/.gitconfig` (color sections)
+- Claude: `~/.claude/statusline.nu` (status line display)
+- Termux: `~/.termux/termux.properties` (run `termux-reload-settings` after changes)
 
 ## Troubleshooting
 

@@ -1,0 +1,8 @@
+{
+  "alwaysThinkingEnabled": false,
+  "statusLine": {
+    "type": "command",
+    "command": "nu ~/.claude/statusline.nu",
+    "padding": 0
+  }
+}
