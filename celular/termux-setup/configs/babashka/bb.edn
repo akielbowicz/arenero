@@ -1,0 +1,14 @@
+;; Babashka configuration
+;; Termux requires LD_PRELOAD='' to run babashka
+
+{:paths ["." "src"]
+ :deps {}
+ :tasks
+ {:requires ([babashka.fs :as fs])
+
+  ;; Example tasks
+  hello {:doc "Print hello"
+         :task (println "Hello from Babashka!")}
+
+  pwd {:doc "Print working directory"
+       :task (println (fs/cwd))}}}

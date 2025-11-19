@@ -1,0 +1,163 @@
+# Starship Prompt Configuration
+# High-contrast theme optimized for monochromacy
+# Uses symbols and brightness instead of colors
+
+format = """
+[┌─](bold white)\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$rust\
+$golang\
+$nodejs\
+$java\
+$julia\
+$cmd_duration
+[└─>](bold white) """
+
+right_format = """$time"""
+
+[character]
+success_symbol = "[▶](bold white)"
+error_symbol = "[✗](bold white)"
+vicmd_symbol = "[◀](bold white)"
+
+[username]
+style_user = "bold white"
+style_root = "bold white"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](bold white) "
+disabled = false
+
+[directory]
+style = "bold white"
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = true
+read_only = " [RO]"
+read_only_style = "bold white"
+
+[directory.substitutions]
+"Documents" = " DOCS"
+"Downloads" = " DOWN"
+"Music" = " MUSIC"
+"Pictures" = " PICS"
+".config" = " CFG"
+
+[git_branch]
+symbol = "GIT:"
+style = "bold white"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold white"
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "CONFLICT "
+ahead = "AHEAD${count} "
+behind = "BEHIND${count} "
+diverged = "DIVERGED "
+untracked = "NEW${count} "
+stashed = "STASH${count} "
+modified = "MOD${count} "
+staged = "STAGED${count} "
+renamed = "REN${count} "
+deleted = "DEL${count} "
+
+[git_commit]
+tag_symbol = "TAG:"
+tag_disabled = false
+style = "bold white"
+
+[cmd_duration]
+min_time = 1000
+format = "[took $duration](bold white) "
+style = "bold white"
+
+[time]
+disabled = false
+format = "[$time](bold white)"
+time_format = "%H:%M"
+style = "bold white"
+
+# Language configurations
+[python]
+symbol = "PY:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = "RS:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[golang]
+symbol = "GO:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[nodejs]
+symbol = "NODE:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[java]
+symbol = "JAVA:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[julia]
+symbol = "JL:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[package]
+symbol = "PKG:"
+style = "bold white"
+format = "[$symbol$version]($style) "
+
+[docker_context]
+symbol = "DOCKER:"
+style = "bold white"
+format = "[$symbol$context]($style) "
+
+[kubernetes]
+symbol = "K8S:"
+style = "bold white"
+format = "[$symbol$context]($style) "
+disabled = false
+
+[battery]
+full_symbol = "FULL"
+charging_symbol = "CHG"
+discharging_symbol = "BAT"
+unknown_symbol = "UNK"
+empty_symbol = "EMPTY"
+
+[[battery.display]]
+threshold = 20
+style = "bold white"
+
+[[battery.display]]
+threshold = 50
+style = "white"
+
+[memory_usage]
+disabled = false
+threshold = 75
+symbol = "MEM:"
+style = "bold white"
+format = "$symbol[$ram]($style) "
+
+[status]
+style = "bold white"
+symbol = "ERR:"
+format = "[$symbol$status]($style) "
+disabled = false

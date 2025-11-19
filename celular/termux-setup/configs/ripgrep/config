@@ -1,0 +1,29 @@
+# Ripgrep Configuration
+
+# Follow symbolic links
+--follow
+
+# Search hidden files and directories
+--hidden
+
+# Ignore patterns
+--glob=!.git/*
+--glob=!node_modules/*
+--glob=!target/*
+--glob=!build/*
+--glob=!dist/*
+--glob=!*.pyc
+--glob=!__pycache__/*
+--glob=!.cache/*
+
+# Use smart case (case-insensitive if all lowercase)
+--smart-case
+
+# Show line numbers
+--line-number
+
+# Show column numbers
+--column
+
+# Sort by file path
+--sort=path

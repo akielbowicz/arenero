@@ -1,0 +1,23 @@
+# Bat Configuration
+# High-contrast for monochromacy
+
+# Use ANSI theme (high contrast black and white)
+--theme="ansi"
+
+# Show line numbers
+--style="numbers,grid"
+
+# Use italic text for comments
+--italic-text=always
+
+# Set tab width
+--tabs=4
+
+# Wrap long lines
+--wrap=auto
+
+# Use pager
+--paging=auto
+
+# Show non-printable characters
+--show-all

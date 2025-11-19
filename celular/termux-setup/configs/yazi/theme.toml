@@ -1,0 +1,153 @@
+# Yazi Theme - High Contrast for Monochromacy
+# Uses only black, white, and brightness variations
+
+[manager]
+cwd = { fg = "white", bold = true }
+
+# Hovered
+hovered = { fg = "black", bg = "white" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword = { fg = "black", bg = "white", bold = true }
+find_position = { fg = "white", bold = true }
+
+# Marker
+marker_selected = { fg = "white", bg = "black" }
+marker_copied = { fg = "white", bg = "black", bold = true }
+marker_cut = { fg = "white", bg = "black", underline = true }
+
+# Tab
+tab_active = { fg = "black", bg = "white", bold = true }
+tab_inactive = { fg = "white" }
+tab_width = 1
+
+# Border
+border_symbol = "│"
+border_style = { fg = "white" }
+
+# Count
+count_copied = { fg = "white", bg = "black", bold = true }
+count_cut = { fg = "white", bg = "black", underline = true }
+count_selected = { fg = "white", bg = "black" }
+
+# Highlighting
+syntect_theme = ""
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "white" }
+
+# Mode
+mode_normal = { fg = "black", bg = "white", bold = true }
+mode_select = { fg = "black", bg = "white", bold = true }
+mode_unset = { fg = "black", bg = "white", bold = true }
+
+# Progress
+progress_label = { fg = "white", bold = true }
+progress_normal = { fg = "white" }
+progress_error = { fg = "white", bold = true }
+
+# Permissions
+permissions_t = { fg = "white", bold = true }
+permissions_r = { fg = "white" }
+permissions_w = { fg = "white", underline = true }
+permissions_x = { fg = "white", bold = true }
+permissions_s = { fg = "white", bold = true, underline = true }
+
+[input]
+border = { fg = "white" }
+title = { fg = "white", bold = true }
+value = { fg = "white" }
+selected = { bg = "white", fg = "black" }
+
+[select]
+border = { fg = "white" }
+active = { fg = "black", bg = "white", bold = true }
+inactive = { fg = "white" }
+
+[tasks]
+border = { fg = "white" }
+title = { fg = "white", bold = true }
+hovered = { fg = "black", bg = "white" }
+
+[which]
+mask = { bg = "black" }
+cand = { fg = "white" }
+rest = { fg = "white" }
+desc = { fg = "white", bold = true }
+separator = "  "
+separator_style = { fg = "white" }
+
+[help]
+on = { fg = "white", bold = true }
+run = { fg = "white" }
+desc = { fg = "white" }
+hovered = { bg = "white", fg = "black", bold = true }
+footer = { fg = "white" }
+
+[filetype]
+rules = [
+    # Directories
+    { mime = "inode/directory", fg = "white", bold = true },
+
+    # Links
+    { name = "*", is = "link", fg = "white", underline = true },
+    { name = "*", is = "orphan", fg = "white", underline = true },
+
+    # Executable
+    { name = "*", is = "exec", fg = "white", bold = true },
+
+    # Documents
+    { mime = "text/*", fg = "white" },
+    { mime = "application/json", fg = "white" },
+    { mime = "application/xml", fg = "white" },
+    { mime = "application/x-yaml", fg = "white" },
+
+    # Archives
+    { mime = "application/*zip", fg = "white", bold = true },
+    { mime = "application/x-tar", fg = "white", bold = true },
+    { mime = "application/x-bzip*", fg = "white", bold = true },
+    { mime = "application/x-7z-compressed", fg = "white", bold = true },
+    { mime = "application/x-rar", fg = "white", bold = true },
+    { mime = "application/x-xz", fg = "white", bold = true },
+
+    # Default
+    { name = "*", fg = "white" },
+]
+
+[icons]
+"Desktop/"     = ""
+"Documents/"   = ""
+"Downloads/"   = ""
+"Pictures/"    = ""
+"Music/"       = ""
+"Videos/"      = ""
+".config/"     = ""
+".git/"        = ""
+
+# Files
+"*.sh"         = ""
+"*.bash"       = ""
+"*.fish"       = ""
+"*.nu"         = ">"
+"*.py"         = ""
+"*.js"         = ""
+"*.ts"         = ""
+"*.rs"         = ""
+"*.go"         = ""
+"*.java"       = ""
+"*.c"          = ""
+"*.cpp"        = ""
+"*.h"          = ""
+"*.txt"        = ""
+"*.md"         = ""
+"*.json"       = "{}"
+"*.yaml"       = ""
+"*.yml"        = ""
+"*.toml"       = ""
+"*.zip"        = ""
+"*.tar"        = ""
+"*.gz"         = ""
+"*.7z"         = ""

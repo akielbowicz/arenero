@@ -1,0 +1,76 @@
+# Helix Editor Configuration
+# Optimized for monochromacy with high contrast
+
+theme = "monochrome"
+
+[editor]
+line-number = "relative"
+mouse = true
+cursorline = true
+cursorcolumn = false
+auto-save = true
+idle-timeout = 400
+completion-trigger-len = 2
+auto-format = true
+auto-pairs = true
+color-modes = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "file-encoding"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+follow-symlinks = true
+git-ignore = true
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+tab = "→"
+tabpad = " "
+
+[editor.indent-guides]
+render = true
+character = "│"
+
+[keys.normal]
+C-s = ":w"
+C-q = ":q"
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.insert]
+j.k = "normal_mode"
+
+[keys.select]
+esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
