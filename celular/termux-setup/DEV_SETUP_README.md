@@ -25,6 +25,7 @@ nu
 
 ### File Management
 - **Yazi** - Terminal file manager (run with `yazi`)
+- **Fzf** - Fuzzy finder for files, commands, and more
 - **Bat** - Better `cat` with syntax highlighting
 - **Ripgrep** - Fast search tool (aliased as `grep`)
 - **fd** - Better `find` command
@@ -92,6 +93,8 @@ All configurations use high-contrast themes with:
 │   └── config         # Syntax highlighter config
 ├── ripgrep/
 │   └── config         # Search tool config
+├── fzf/
+│   └── fzf.conf       # Fuzzy finder config reference
 ├── starship.toml      # Prompt configuration
 └── babashka/
     └── bb.edn         # Babashka tasks
@@ -190,6 +193,27 @@ zk edit --interactive      # Edit notes
 rg "search term"          # Search current directory
 rg "pattern" ~/projects   # Search specific directory
 rg -i "case insensitive"  # Case-insensitive search
+```
+
+### Fuzzy Finding with Fzf
+```bash
+fzf                       # Interactive fuzzy finder
+vim $(fzf)               # Open selected file in editor
+cd $(find . -type d | fzf)  # Navigate to directory
+fzf --preview 'bat {}'   # Preview files with bat
+fzf --multi              # Multi-selection mode
+```
+
+**Fzf Integration Examples:**
+```bash
+# Find and edit file
+hx $(fzf)
+
+# Search in file contents and open
+rg "pattern" -l | fzf --preview 'bat {}' | xargs hx
+
+# Process selection
+ps aux | fzf | awk '{print $2}'
 ```
 
 ### Editing with Helix

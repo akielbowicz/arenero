@@ -12,7 +12,7 @@ echo ""
 
 # Step 1: Install packages
 echo "[1/9] Installing core packages..."
-pkg install -y nushell zoxide yazi starship ripgrep bat helix zk carapace nodejs
+pkg install -y nushell zoxide yazi starship ripgrep bat helix zk carapace nodejs fzf
 
 # Step 2: Install npm packages
 echo "[2/9] Installing npm global packages..."
@@ -128,7 +128,7 @@ EOF
 echo "[5/9] Configuring environment..."
 cat > ~/.config/nushell/env.nu << 'EOF'
 $env.BAT_THEME = "ansi"
-$env.FZF_DEFAULT_OPTS = "--color=bw --layout=reverse --border"
+$env.FZF_DEFAULT_OPTS = "--color=bw --layout=reverse --border --info=inline --prompt='> ' --pointer='▶' --marker='✓'"
 $env.RIPGREP_CONFIG_PATH = "~/.config/ripgrep/config"
 $env.EDITOR = "helix"
 EOF
@@ -330,4 +330,5 @@ echo "  - GitHub CLI (gh)"
 echo "  - Node.js & npm"
 echo "  - Claude Code (claude)"
 echo "  - Babashka (already installed)"
+echo "  - Fzf (fuzzy finder)"
 echo ""
