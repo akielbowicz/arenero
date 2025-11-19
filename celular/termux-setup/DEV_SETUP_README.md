@@ -30,8 +30,10 @@ nu
 - **fd** - Better `find` command
 
 ### Development
+- **Node.js & npm** - JavaScript runtime and package manager
 - **Helix** - Modern modal editor (run with `hx` or `helix`)
 - **GitHub CLI** - Manage GitHub from terminal (`gh`)
+- **Claude Code** - AI-powered coding assistant (`claude`)
 - **Babashka** - Fast Clojure scripting (use `bbk` alias)
 - **Carapace** - Multi-shell completion engine (auto-enabled in Nushell)
 
@@ -103,6 +105,23 @@ All configurations use high-contrast themes with:
 
 ## Special Considerations
 
+### Node.js & npm
+Install Node.js (includes npm) via Termux package manager:
+```bash
+pkg install nodejs
+```
+
+Verify installation:
+```bash
+node --version   # Should show v24.9.0 or newer
+npm --version    # Should show 11.6.0 or newer
+```
+
+After npm is installed, you can install global packages like Claude Code:
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
 ### Babashka on Termux
 Babashka requires LD_PRELOAD to be empty on Termux. Use the `bbk` alias:
 ```bash
@@ -125,6 +144,19 @@ bbk your-script.clj
 Authenticate with:
 ```bash
 gh auth login
+```
+
+### Claude Code
+Launch Claude Code for AI-assisted development:
+```bash
+claude              # Start interactive session
+claude -c           # Continue previous conversation
+claude --help       # Show available options
+```
+
+Installed via npm:
+```bash
+npm install -g @anthropic-ai/claude-code
 ```
 
 ## Usage Examples
@@ -228,15 +260,21 @@ Update all packages:
 pkg upgrade
 ```
 
-Update tools:
+Update Termux tools:
 ```bash
 pkg upgrade nushell zoxide yazi starship ripgrep bat helix zk
+```
+
+Update npm packages (like Claude Code):
+```bash
+npm update -g @anthropic-ai/claude-code
 ```
 
 ## Additional Resources
 
 - Helix: https://helix-editor.com/
 - Nushell: https://nushell.sh/
+- Claude Code: https://github.com/anthropics/claude-code
 - Zk: https://github.com/zk-org/zk
 - Yazi: https://yazi-rs.github.io/
 - Starship: https://starship.rs/

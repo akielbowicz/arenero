@@ -11,16 +11,20 @@ echo "╚═══════════════════════�
 echo ""
 
 # Step 1: Install packages
-echo "[1/8] Installing core packages..."
-pkg install -y nushell zoxide yazi starship ripgrep bat helix zk carapace
+echo "[1/9] Installing core packages..."
+pkg install -y nushell zoxide yazi starship ripgrep bat helix zk carapace nodejs
 
-# Step 2: Create directory structure
-echo "[2/8] Creating directory structure..."
+# Step 2: Install npm packages
+echo "[2/9] Installing npm global packages..."
+npm install -g @anthropic-ai/claude-code
+
+# Step 3: Create directory structure
+echo "[3/9] Creating directory structure..."
 mkdir -p ~/.config/{nushell,yazi,bat,ripgrep,helix/themes,babashka}
 mkdir -p ~/notes/{daily,.zk/templates}
 
-# Step 3: Configure Nushell
-echo "[3/8] Configuring Nushell..."
+# Step 4: Configure Nushell
+echo "[4/9] Configuring Nushell..."
 cat > ~/.config/nushell/config.nu << 'EOF'
 # Nushell Configuration - High-contrast for monochromacy
 $env.EDITOR = "helix"
@@ -91,8 +95,8 @@ $env.config = ($env.config | upsert hooks {
 })
 EOF
 
-# Step 4: Environment config
-echo "[4/8] Configuring environment..."
+# Step 5: Environment config
+echo "[5/9] Configuring environment..."
 cat > ~/.config/nushell/env.nu << 'EOF'
 $env.BAT_THEME = "ansi"
 $env.FZF_DEFAULT_OPTS = "--color=bw --layout=reverse --border"
@@ -100,8 +104,8 @@ $env.RIPGREP_CONFIG_PATH = "~/.config/ripgrep/config"
 $env.EDITOR = "helix"
 EOF
 
-# Step 5: Tool configs
-echo "[5/8] Configuring tools..."
+# Step 6: Tool configs
+echo "[6/9] Configuring tools..."
 
 # Bat
 cat > ~/.config/bat/config << 'EOF'
@@ -151,8 +155,8 @@ style = "bold white"
 format = "([$all_status]($style) )"
 EOF
 
-# Step 6: Yazi
-echo "[6/8] Configuring Yazi..."
+# Step 7: Yazi
+echo "[7/9] Configuring Yazi..."
 cat > ~/.config/yazi/yazi.toml << 'EOF'
 [manager]
 show_hidden = false
@@ -165,8 +169,8 @@ editor = "helix"
 pager = "bat"
 EOF
 
-# Step 7: Helix
-echo "[7/8] Configuring Helix..."
+# Step 8: Helix
+echo "[8/9] Configuring Helix..."
 cat > ~/.config/helix/config.toml << 'EOF'
 theme = "monochrome"
 
@@ -201,8 +205,8 @@ gray = "#808080"
 white = "#FFFFFF"
 EOF
 
-# Step 8: Initialize zk
-echo "[8/8] Initializing zk notebook..."
+# Step 9: Initialize zk
+echo "[9/9] Initializing zk notebook..."
 cd ~/notes
 if [ ! -f .zk/config.toml ]; then
     zk init --no-input
@@ -242,5 +246,7 @@ echo "  - Helix (editor)"
 echo "  - Zk (notes)"
 echo "  - Carapace (completions)"
 echo "  - GitHub CLI (gh)"
+echo "  - Node.js & npm"
+echo "  - Claude Code (claude)"
 echo "  - Babashka (already installed)"
 echo ""
