@@ -99,10 +99,22 @@ alias gi = git commit -m           # 'i' right thumb, commit inline message
 
 # Starship
 $env.STARSHIP_SHELL = "nu"
+$env.STARSHIP_SESSION_KEY = (random chars -l 16)
+
 def create_left_prompt [] {
-    starship prompt --status $env.LAST_EXIT_CODE
+    starship prompt --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE
 }
+
+def create_right_prompt [] {
+    starship prompt --right --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE
+}
+
 $env.PROMPT_COMMAND = { || create_left_prompt }
+$env.PROMPT_COMMAND_RIGHT = { || create_right_prompt }
+$env.PROMPT_INDICATOR = ""
+$env.PROMPT_INDICATOR_VI_INSERT = ": "
+$env.PROMPT_INDICATOR_VI_NORMAL = "> "
+$env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # Update zoxide on cd
 $env.config = ($env.config | upsert hooks {
@@ -123,6 +135,58 @@ EOF
 
 # Step 6: Tool configs
 echo "[6/9] Configuring tools..."
+
+# Git
+cat > ~/.gitconfig << 'EOF'
+[color]
+	ui = true
+	status = always
+
+[color "status"]
+	added = bold white
+	changed = bold white reverse
+	untracked = white
+	branch = bold white
+	nobranch = bold white reverse
+
+[color "diff"]
+	meta = bold white
+	frag = bold white
+	old = white reverse
+	new = bold white
+	commit = bold white
+
+[color "branch"]
+	current = bold white
+	local = white
+	remote = white
+	upstream = bold white
+
+[color "interactive"]
+	prompt = bold white
+	header = bold white
+	help = white
+	error = bold white reverse
+
+[core]
+	pager = less -R
+
+[diff]
+	tool = difftastic
+
+[merge]
+	conflictstyle = diff3
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
+EOF
+
+echo "  ⚠ Note: Configure git user details with:"
+echo "    git config --global user.name 'Your Name'"
+echo "    git config --global user.email 'your.email@example.com'"
 
 # Bat
 cat > ~/.config/bat/config << 'EOF'

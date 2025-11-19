@@ -1,0 +1,47 @@
+# Git configuration template
+# High-contrast color scheme optimized for monochrome terminals
+
+[color]
+	ui = true
+	status = always
+
+[color "status"]
+	added = bold white
+	changed = bold white reverse
+	untracked = white
+	branch = bold white
+	nobranch = bold white reverse
+
+[color "diff"]
+	meta = bold white
+	frag = bold white
+	old = white reverse
+	new = bold white
+	commit = bold white
+
+[color "branch"]
+	current = bold white
+	local = white
+	remote = white
+	upstream = bold white
+
+[color "interactive"]
+	prompt = bold white
+	header = bold white
+	help = white
+	error = bold white reverse
+
+[core]
+	pager = less -R
+
+[diff]
+	tool = difftastic
+
+[merge]
+	conflictstyle = diff3
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main

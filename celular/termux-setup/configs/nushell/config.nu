@@ -154,11 +154,11 @@ $env.STARSHIP_SHELL = "nu"
 $env.STARSHIP_SESSION_KEY = (random chars -l 16)
 
 def create_left_prompt [] {
-    starship prompt --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE --jobs (ps | where pid == $env.PPID | get 0 | get children | length)
+    starship prompt --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE
 }
 
 def create_right_prompt [] {
-    starship prompt --right --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE --jobs (ps | where pid == $env.PPID | get 0 | get children | length)
+    starship prompt --right --cmd-duration $env.CMD_DURATION_MS --status $env.LAST_EXIT_CODE
 }
 
 $env.PROMPT_COMMAND = { || create_left_prompt }
