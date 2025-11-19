@@ -71,15 +71,9 @@ $env.config = {
 
     color_config: $high_contrast_theme
 
-    use_grid_icons: true
     footer_mode: 25
 
     float_precision: 2
-
-    filesize: {
-        metric: false
-        format: "auto"
-    }
 
     cursor_shape: {
         emacs: line
@@ -89,7 +83,15 @@ $env.config = {
 
     edit_mode: vi
 
-    shell_integration: true
+    shell_integration: {
+        osc2: true
+        osc7: true
+        osc8: true
+        osc9_9: false
+        osc133: true
+        osc633: true
+        reset_application_mode: true
+    }
 
     history: {
         max_size: 100000
@@ -167,7 +169,7 @@ $env.PROMPT_INDICATOR_VI_NORMAL = "> "
 $env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # Aliases
-alias ls = ls --color=always
+# Note: Nushell's ls is always colored, no --color flag needed
 alias ll = ls -la
 alias la = ls -a
 alias l = ls -l

@@ -44,7 +44,15 @@ $env.config = {
     show_banner: false
     color_config: $high_contrast_theme
     edit_mode: vi
-    shell_integration: true
+    shell_integration: {
+        osc2: true
+        osc7: true
+        osc8: true
+        osc9_9: false
+        osc133: true
+        osc633: true
+        reset_application_mode: true
+    }
     completions: {
         case_sensitive: false
         quick: true
@@ -79,6 +87,15 @@ $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense'
 
 alias cat = bat
 alias grep = rg
+
+# Git aliases - optimized for two-thumb Colemak DH on phone
+alias gn = git status              # 'n' center-right, quick status check
+alias ge = git add .               # 'e' easy right thumb, add current dir
+alias gt = git commit              # 't' center-left, commit
+alias gh = git push                # 'h' center-right, push (home/hub)
+alias gd = git diff                # 'd' center-left, diff
+alias gr = git pull                # 'r' left thumb, pull (retrieve)
+alias gi = git commit -m           # 'i' right thumb, commit inline message
 
 # Starship
 $env.STARSHIP_SHELL = "nu"
